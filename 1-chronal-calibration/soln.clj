@@ -1,8 +1,7 @@
 (require 
-  '[clojure.java.io :as io]
   '[clojure.string :refer [split-lines]])
 
-(def nums 
+(def nums
   (->>
     (slurp "input.txt")
     (split-lines)
